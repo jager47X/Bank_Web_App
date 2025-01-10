@@ -1,0 +1,249 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; /* Subtle light background for professional contrast */
+  color: #333; /* Darker text for readability */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007BFF; /* Link color */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Code Blocks */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #f0f0f0; /* Softer background for code blocks */
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Global Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Header */header {
+  background: linear-gradient(90deg, #5d8e86, #8e1f1f); /* Gradient for a modern look */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Align logo and nav on opposite sides */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight:unset;  
+  color:#e2dc60;
+  text-transform: uppercase; /* Capitalized logo text */
+  letter-spacing: 1.5px; /* Slightly spaced letters for a premium feel */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Space between nav links */
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+  color: #f4f4f4; /* Lighter white on hover */
+}
+
+header .cta-button {
+  background-color: #f4f4f4; /* Contrast CTA button */
+  color: #6a8e1f;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .cta-button:hover {
+  background-color: #e4e4e4;
+  color: #9fbe16;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(90deg, #0047AB, #002D62); /* Gradient for a modern, dynamic look */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #FFD700; /* Gold for premium bank branding */
+  color: #002D62;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+  background-color: #FFC107; /* Slightly lighter gold */
+  transform: scale(1.05); /* Subtle hover animation */
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+.features .feature {
+  text-align: center;
+  flex: 1 1 300px; /* Flex item for responsiveness */
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.features .feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #002D62;
+}
+
+.features .feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #a4b2c3;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Design for iPhone (Small Devices) */
+@media (max-width: 768px) {
+  /* Hide Buttons (Navigation Links) on Small Screens */
+  header nav ul {
+    display: none; /* Completely hide the navigation links */
+  }
+
+  /* Ensure Hamburger Menu is Visible */
+  .hamburger {
+    display: flex; /* Show hamburger menu for sidebar navigation */
+  }
+}
+
+/* Default Hamburger Menu Style */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger:hover span {
+  background-color: #ffd700; /* Gold hover effect for the hamburger menu */
+}

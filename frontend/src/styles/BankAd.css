@@ -1,0 +1,73 @@
+/* Bank Ad Styles */
+.bank-ad {
+    max-width: 500px;
+    margin: 50px auto; /* Center the ad */
+    padding: 2rem;
+    border: 1px solid #2e3339; /* Highlight with bank's brand color */
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Subtle background for contrast */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Ad Title */
+  .bank-ad h1 {
+    font-size: 1.8rem;
+    color: #4a5158;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ad Description */
+  .bank-ad p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Ad Features List */
+  .bank-ad ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bank-ad ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .bank-ad ul li::before {
+    content: "✔️";
+    color: #28a745; /* Green checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Apply Now Button */
+  .bank-ad button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #01ff2f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .bank-ad button:hover {
+    background-color: #045820;
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .bank-ad button:active {
+    transform: scale(0.98); /* Slightly smaller on click */
+  }
+  
