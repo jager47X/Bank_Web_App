@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-    background: #333;
+    background: #322d55;
     color: white;
     padding: 2rem 1rem;
     margin-top: 3rem;
@@ -20,7 +20,7 @@
   .footer-section h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #ffd700; /* Highlighted headers */
+    color: #4ea4dd; /* Highlighted headers */
   }
   
   .footer-section p {
@@ -33,10 +33,10 @@
   .footer-bottom {
     text-align: center;
     margin-top: 2rem;
-    border-top: 1px solid #444;
+    border-top: 1px solid #444444;
     padding-top: 1rem;
     font-size: 0.9rem;
-    color: #aaa;
+    color: #aaaaaa;
   }
   
   /* Responsive Footer */

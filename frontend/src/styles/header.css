@@ -4,7 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
+.logo-image {
+  width: 100px;
+  height: 75px;
+  margin-right: 20px;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,15 +24,51 @@ body {
 }
 
 /* Header Styles */
-header {
-  background: linear-gradient(90deg, #939587, #8e1f1f);
+
+/* Header */header {
+  background: linear-gradient(90deg, #e0e0e0, #1f3e8e);
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Space between nav links */
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
+  color: #f4f4f4; /* Lighter white on hover */
+}
+
+header .cta-button {
+  background-color: #f4f4f4; /* Contrast CTA button */
+  color: #6a8e1f;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+
 
 header .logo {
   font-size: 1.8rem;
@@ -61,7 +106,7 @@ header nav ul li a:hover {
   left: 0;
   width: 250px;
   height: 100%;
-  background: #8e1f1f;
+  background: #1f888e;
   color: white;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   transform: translateX(-100%); /* Hidden by default */

@@ -19,8 +19,12 @@ function Header() {
 
   return (
     <header>
+      
       <Link to="/">
-        <div className="logo">Bank Web App</div>
+      <div className="logo">
+          <img src="/bank_logo.png" alt="" className="logo-image" />
+          <span>Bank Web App</span>
+        </div>
       </Link>
       {isDesktop && isLogin&&(
         <nav>
@@ -35,8 +39,7 @@ function Header() {
       )}
       {isDesktop && !isLogin&&(
         <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
+          <ul> 
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/SignUp">SignUp</Link></li>
           </ul>

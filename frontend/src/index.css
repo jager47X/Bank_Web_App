@@ -52,61 +52,6 @@ code {
   gap: 1rem;
 }
 
-/* Header */header {
-  background: linear-gradient(90deg, #5d8e86, #8e1f1f); /* Gradient for a modern look */
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between; /* Align logo and nav on opposite sides */
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-header .logo {
-  font-size: 1.5rem;
-  font-weight:unset;  
-  color:#e2dc60;
-  text-transform: uppercase; /* Capitalized logo text */
-  letter-spacing: 1.5px; /* Slightly spaced letters for a premium feel */
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem; /* Space between nav links */
-}
-
-header nav ul li a {
-  color: white;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-}
-
-header nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover effect */
-  color: #f4f4f4; /* Lighter white on hover */
-}
-
-header .cta-button {
-  background-color: #f4f4f4; /* Contrast CTA button */
-  color: #6a8e1f;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header .cta-button:hover {
-  background-color: #e4e4e4;
-  color: #9fbe16;
-}
 
 
 /* Hero Section */
@@ -228,22 +173,3 @@ footer a:hover {
   }
 }
 
-/* Default Hamburger Menu Style */
-.hamburger {
-  display: none; /* Hidden on desktop */
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  transition: background-color 0.3s ease;
-}
-
-.hamburger:hover span {
-  background-color: #ffd700; /* Gold hover effect for the hamburger menu */
-}
